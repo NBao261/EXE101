@@ -35,37 +35,37 @@ import confetti from 'canvas-confetti'
 
 const pricingTiers = [
   {
-    name: 'Gói FREE',
+    name: 'Gói BASIC',
     price: '0đ',
     period: '',
-    description: 'Bắt đầu hành trình chinh phục tri thức.',
-    features: ['1 Folder môn học', 'Quiz cơ bản', 'Lịch sử học tập (7 ngày)'],
+    description: 'Bắt đầu hành trình tri thức với những công cụ cốt lõi.',
+    features: ['1 Folder môn học', 'Truy cập Marketplace', 'Phòng tự học cơ bản', 'AI Chatbot (Giới hạn)'],
     buttonText: 'Đang sử dụng',
     isCurrent: true,
-    color: 'bg-slate-100',
+    color: 'bg-slate-50',
     textColor: 'text-slate-600'
   },
   {
     name: 'Gói PRO',
-    price: '29.000đ',
+    price: '49.000đ',
     period: '/tháng',
-    description: 'Nâng cấp hiệu suất học tập tối đa.',
-    features: ['5 Folders môn học', 'Không giới hạn Quiz & Thi thử', 'AI Flashcards nâng cao', 'Lịch sử học tập trọn đời'],
-    buttonText: 'Nâng cấp ngay',
+    description: 'Nâng tầm hiệu quả học tập với AI thông minh.',
+    features: ['10 Folders môn học', 'Không giới hạn Phòng thi (Exam Room)', 'AI Flashcards nâng cao', 'Ưu tiên mua tài liệu (Giảm 5%)'],
+    buttonText: 'Nâng cấp lên PRO',
     isCurrent: false,
     color: 'bg-brand/10',
     textColor: 'text-brand'
   },
   {
-    name: 'Gói PREMIUM',
-    price: '59.000đ',
+    name: 'Gói ULTIMATE',
+    price: '99.000đ',
     period: '/tháng',
-    description: 'Giải pháp toàn diện cho Đồ án & Luận văn.',
-    features: ['Toàn bộ tính năng PRO', 'Logic Audit (Kiểm định báo cáo)', 'Mock Defense (Phòng bảo vệ giả lập)', 'Ưu tiên hỗ trợ 24/7'],
-    buttonText: 'Sở hữu ngay',
+    description: 'Sức mạnh tuyệt đối cho Đồ án & Sự nghiệp.',
+    features: ['Toàn bộ tính năng PRO', 'Thesis Audit (Kiểm định Logic)', 'Defense Lab (Phòng giả lập bảo vệ)', 'Career Lab (Phỏng vấn AI)', 'Lưu trữ Drive 10GB'],
+    buttonText: 'Sở hữu ULTIMATE',
     isCurrent: false,
     isPremium: true,
-    color: 'bg-brand',
+    color: 'bg-slate-900',
     textColor: 'text-white'
   }
 ];
