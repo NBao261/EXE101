@@ -101,7 +101,7 @@ export default function App() {
       {/* Main Layout Container */}
       <div className="flex pt-16 min-h-screen">
         {/* Sidebar Navigation */}
-        <aside className="fixed left-0 top-16 bottom-0 w-20 md:w-72 bg-sidebar border-r border-white/5 z-40 overflow-y-auto custom-scrollbar flex flex-col">
+        <aside className="fixed left-0 top-16 bottom-0 w-20 md:w-72 bg-sidebar border-r border-slate-100 z-40 overflow-y-auto custom-scrollbar flex flex-col">
           {/* Search Bar (Modern Cmd+K Feel) */}
           <div className="p-6 hidden md:block">
             <div className="relative group">
@@ -111,7 +111,7 @@ export default function App() {
               <input 
                 type="text" 
                 placeholder="Tìm nhanh... (⌘K)" 
-                className="w-full bg-white/5 border border-white/10 rounded-lg py-2.5 pl-10 pr-4 text-[11px] font-bold text-slate-300 placeholder:text-slate-600 focus:outline-none focus:ring-1 focus:ring-brand/50 focus:border-brand/50 transition-all"
+                className="w-full bg-slate-50 border border-slate-200 rounded-lg py-2.5 pl-10 pr-4 text-[11px] font-bold text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-brand/50 focus:border-brand/50 transition-all"
               />
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function App() {
                         "group flex items-center gap-3.5 p-3 rounded-lg font-bold transition-all duration-300 relative",
                         currentTab === item.id
                           ? "bg-brand/10 text-brand"
-                          : "text-slate-500 hover:text-slate-300 hover:bg-white/[0.02]",
+                          : "text-slate-500 hover:text-slate-900 hover:bg-slate-50",
                       )}
                     >
                       {currentTab === item.id && (
@@ -152,7 +152,7 @@ export default function App() {
                           "transition-all duration-300",
                           currentTab === item.id
                             ? "text-brand scale-110"
-                            : "text-slate-600 group-hover:text-slate-400 group-hover:scale-110",
+                            : "text-slate-400 group-hover:text-brand group-hover:scale-110",
                         )}
                       />
                       <span className="hidden md:block text-[13px] tracking-tight">
@@ -166,12 +166,12 @@ export default function App() {
           </div>
 
           {/* Bottom Profile/Status Area */}
-          <div className="mt-auto p-6 hidden md:block border-t border-white/5 bg-white/[0.01]">
-            <div className="p-5 bg-white/[0.03] rounded-xl border border-white/5 space-y-4">
+          <div className="mt-auto p-6 hidden md:block border-t border-slate-100 bg-slate-50/50">
+            <div className="p-5 bg-white rounded-xl border border-slate-100 space-y-4 shadow-sm">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-brand/20 flex items-center justify-center text-brand font-black text-sm">JS</div>
                 <div>
-                  <p className="text-[11px] font-black text-white leading-none">James Smith</p>
+                  <p className="text-[11px] font-black text-slate-900 leading-none">James Smith</p>
                   <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-1">Thành viên Pro</p>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default function App() {
                   <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest">Tiến độ</p>
                   <p className="text-[10px] font-black text-brand">75%</p>
                 </div>
-                <div className="h-1 bg-white/5 rounded-full overflow-hidden">
+                <div className="h-1 bg-slate-100 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "75%" }}
