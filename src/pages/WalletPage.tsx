@@ -2,11 +2,9 @@ import { useState } from 'react'
 import { 
   Wallet, 
   History, 
-  ArrowUpRight, 
   ArrowDownLeft, 
   ShieldCheck,
   TrendingUp,
-  Award,
   CheckCircle2,
   Zap,
   Star,

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
   Settings, 
@@ -6,15 +6,12 @@ import {
   Zap,
   ShieldAlert,
   User,
-  ChevronRight,
   ShieldCheck,
   FileText,
   Mic2,
   Timer,
-  MessageSquare,
   Trophy,
   AlertTriangle,
-  Lightbulb,
   ArrowRight,
   Play,
   Volume2,
